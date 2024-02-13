@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'White Rabbit', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.5);
+  transition: top 0.3s;
+}
+
+#section-hero {
+    background-image: url("/assets/tron.gif");
+    background-size: cover;
+    color: white;
+}
+
+#section-hero h1 {
+  font-family: 'Chintzy', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+#section-hero p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#section-contact {
+  background-image: url("/assets/wallpaper.jpg");
+  background-size: cover;
+  color: white;
+}
+
+#about-sidebar {
+  background-color: #212121;
+  color: white;
+}
+/* applied via javascript */
+#about-sidebar .link-highlighted {
+  background-color: white;
+  color: #212121;
+  border-radius: 0.5rem;
+}
+
+.subsection-main {
+  overflow: scroll; height: 100vh; overflow-x: hidden; 
+}
+
+.subsection-main::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-primary {
+  background-color: #131313;
+  border-color: white;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #212121;  
+  border-color: #212121;
+}
+
+.carousel-indicators li {
+  background-color: #fff; /* Change this to your preferred light color */
+}
+
+.carousel-indicators .active {
+  background-color: #212121; /* Change this to your preferred dark color */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.fab {
+  color: #212121;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
